@@ -1,0 +1,15 @@
+$tot-back: 100%; 
+$border: 50px; 
+$cont-height: 70%; 
+$ul-back: 80%; 
+$direction: column;
+@mixin underline {
+    height: 10px; 
+    width: 100px;
+    top: 20px; 
+    bottom: 0px; 
+    right: 5px; 
+    left: -15px; 
+    margin: 15px; 
+    background: black;
+} 

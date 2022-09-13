@@ -1,0 +1,80 @@
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url(../Pics/second-background.jpeg);
+}
+
+body img {
+  width: 80%;
+  height: 80%;
+}
+
+.me {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 40%;
+  justify-content: center;
+  text-align: center;
+}
+
+.me h1 {
+  font-size: 60px;
+}
+
+.meimg img {
+  border-radius: 50px;
+  width: 15%;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  height: 70%;
+  background: white;
+}
+
+.content2, .new-back ul {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 70%;
+}
+
+.new-back ul {
+  width: 80%;
+}
+
+.cont-2 {
+  display: flex;
+  flex-direction: column;
+  margin: 0%;
+}
+
+.content3 {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 70%;
+  background: lightgrey;
+}
+
+.underline {
+  position: relative;
+}
+
+.underline::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 10px;
+  width: 100px;
+  top: 20px;
+  bottom: 0px;
+  right: 5px;
+  left: -15px;
+  margin: 15px;
+  background: black;
+}
+
+/*# sourceMappingURL=style.css.map */

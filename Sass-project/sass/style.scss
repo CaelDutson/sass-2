@@ -1,0 +1,72 @@
+
+@import "variable";
+body{ 
+    width: $tot-back; 
+    height: $tot-back; 
+    background-image: url(../Pics/second-background.jpeg);
+} 
+body img{ 
+    width: $ul-back; 
+    height: $ul-back;
+}
+.me{ 
+    display: flex; 
+    flex-direction: $direction;
+    width: $tot-back; 
+    height: 40%;  
+    justify-content: center; 
+    text-align: center; 
+}  
+
+.me h1{ 
+    font-size: 60px;
+}
+
+.meimg img{ 
+    border-radius: $border; 
+    width: 15%;
+}
+
+.content{ 
+    display: flex; 
+    width: $tot-back; 
+    height: $cont-height; 
+    background: white;
+} 
+
+.content2{ 
+    display: flex; 
+    flex-direction: $direction;
+    width: 30%; 
+    height: $cont-height; 
+}  
+
+.new-back ul{ 
+    @extend .content2;  
+    width: $ul-back;
+}
+
+.cont-2{ 
+    display: flex; 
+    flex-direction: $direction; 
+    margin: 0%;
+}
+
+.content3{ 
+    display: flex; 
+    flex-direction: $direction;
+    width: $cont-height; 
+    height: $cont-height; 
+    background: lightgrey;
+} 
+
+.underline {
+    position: relative
+   }
+   
+.underline::after{
+content:"";
+    display: block;
+    position: absolute;
+    @include underline();
+} 
